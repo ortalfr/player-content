@@ -1,0 +1,11 @@
+build the project - mvn clean install
+run application PlayerContentsApplication.java
+
+the application will be available at http://localhost:8080
+the application will load all player.csv data into h2 database
+player.cs is in src/main/java/com/player/loader
+
+
+there are 2 apis: no authentication required
+curl --location 'http://localhost:8080/api/players'
+curl --location 'http://localhost:8080/api/players/aardsda01'
